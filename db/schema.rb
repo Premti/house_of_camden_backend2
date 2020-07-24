@@ -27,7 +27,10 @@ ActiveRecord::Schema.define(version: 2020_07_20_110135) do
     t.string "appointment_type"
     t.string "name"
     t.string "email"
-    t.integer "phone_number"
+    t.string "phone_number"
+    t.string "date"
+    t.boolean "confirmed", default: false
+    t.string "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
